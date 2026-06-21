@@ -8,24 +8,16 @@ A Vue 3 single-page application for browsing and purchasing electronics.
 - **Vuex 4** — global state (cart, saved items, search)
 - **Vite** — build tooling
 
-## Features
-- Browse products by category
-- Search across product names
-- Sort by price and rating
-- Add/remove items from cart with quantity controls
-- Save products for later
-- Detailed product page with specs and reviews
-
 ## Project Structure
 ```
 src/
-├── assets/        # CSS, SVG icons
-├── components/    # NavBar, CategoryBrowser, SiteFooter
-├── views/         # HomeView, CategoryView, ProductView, CartView, SavedView
-├── router.js      # Vue Router config
-├── store.js       # Vuex store
-├── api.js         # Backend fetch helpers
-└── main.js        # App entry point
+- assets/        # CSS, SVG icons
+- components/    # NavBar, CategoryBrowser, SiteFooter
+- views/         # HomeView, CategoryView, ProductView, CartView, SavedView
+- router.js      # Vue Router config
+- store.js       # Vuex store
+- api.js         # Backend fetch helpers
+- main.js        # App entry point
 ```
 
 ## Setup
@@ -39,6 +31,9 @@ npm run serve
 cd nexus
 npm install
 npm run dev
+```
+```
+apple-store-backend-build/package.json ("serve ...") -> ("serve": "cross-env DATABASE_URL=file:../prisma/dev.db node dist/index.js")
 ```
 
 Open http://localhost:5173
